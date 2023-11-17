@@ -14,16 +14,33 @@
             color: white;
             border-radius: 10px;
         }
+        h1,p{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p#texto{
+            color: rgb(217, 63, 217);
+        }
+        p#mil{
+            color: blueviolet;
+        }
     </style>
 </head>
 <body>
+    <h1>Clique no Botão</h1>
+    <p id="texto"></p>
+    <p id="mil">
 
+    </p>
     <button onclick='clicou()'>Clique Aqui!</button>
 
 
     <script>
         function clicou(){
-            alert('Clicou no botão la ele')
+            document.getElementById('texto').innerHTML='<h2> Lá ele </h2>';
+            document.getElementById('mil')
+            mil.innerHTML = `<h2> MIL VEZES </h2>`
+            //alert('Clicou no botão la ele');
         }
     </script>
 </body>
