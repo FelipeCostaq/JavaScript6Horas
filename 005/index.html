@@ -24,6 +24,12 @@
             height: 20vh;
             background-color:lightblue;
         }
+        p#texto{
+            position: absolute;
+            bottom: 58%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
 <body>
@@ -46,16 +52,18 @@
 
         function Mudacor(){
             var div = document.querySelector('div#campo')
-            div.style.backgroundColor = ' red'
+            div.style.backgroundColor = 'lightgreen'
         }
 
         function padrao(){
+            paragra = document.querySelector('p#texto').innerHTML = ``
             var div = document.querySelector('div#campo')
             div.style.backgroundColor = ' lightblue'
         }
         
         function addtext(){
-
+            paragra = document.querySelector('p#texto').innerHTML = `<h2>Hello, World!</h2>`
+    
         }
 
     </script>
