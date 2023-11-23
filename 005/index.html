@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        div#campo{
+            margin: auto;
+            width: 100vw;
+            height: 20vh;
+            background-color:lightblue;
+        }
+    </style>
 </head>
 <body>
+    <h1>Eventos</h1>
+    <h2>Eventos Javascript</h2>
+    <p id="botao"><button ondblclick="clicou()">Clique aqui!</button></p>
+    <div onmousemove="addtext()" onmouseout="padrao()" onmouseover="Mudacor()" id="campo">
+        <p id="texto"></p>
+    </div>
     
+
+    <script>
+        function clicou(){
+            alert('Clicou!')
+            var botao = document.getElementById('botao')
+            botao.style.display = 'none'
+            document.body.style.color='yellow'
+            document.body.style.backgroundColor='black' 
+        }
+
+        function Mudacor(){
+            var div = document.querySelector('div#campo')
+            div.style.backgroundColor = ' red'
+        }
+
+        function padrao(){
+            var div = document.querySelector('div#campo')
+            div.style.backgroundColor = ' lightblue'
+        }
+        
+        function addtext(){
+
+        }
+
+    </script>
 </body>
 </html>
