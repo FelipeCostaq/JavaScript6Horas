@@ -1,3 +1,3 @@
-const lista = ['arroz', 'feijão', 'macarrão', 'leite']
-
-console.log(lista[0])
+const lista = ['arroz', 'feijão', 'macarrão', 'leite'];
+lista[4] = 'pão';
+console.log(lista[4]);
