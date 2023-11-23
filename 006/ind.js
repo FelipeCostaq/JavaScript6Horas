@@ -1,0 +1,1 @@
+const lista [arroz, feijao, macarrao, leite]
