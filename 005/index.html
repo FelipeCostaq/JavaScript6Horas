@@ -39,6 +39,8 @@
     <div onmousemove="addtext()" onmouseout="padrao()" onmouseover="Mudacor()" id="campo">
         <p id="texto"></p>
     </div>
+
+    <p><input onfocus="inp()" type="text" name="campoTexto" id="campoTexto" placeholder="Digite" style="padding: 80px; font-size: 40px;"></p>
     
 
     <script>
@@ -53,6 +55,7 @@
         function Mudacor(){
             var div = document.querySelector('div#campo')
             div.style.backgroundColor = 'lightgreen'
+            paragra = document.querySelector('p#texto').innerHTML = `<h2>Hello, World!</h2>`
         }
 
         function padrao(){
@@ -60,11 +63,13 @@
             var div = document.querySelector('div#campo')
             div.style.backgroundColor = ' lightblue'
         }
-        
-        function addtext(){
-            paragra = document.querySelector('p#texto').innerHTML = `<h2>Hello, World!</h2>`
-    
+
+        function inp(){
+            var inp = document.getElementById('campoTexto')
+            inp.style.backgroundColor = 'lightblue'
+            inp.style.borderColor = 'white'
         }
+        
 
     </script>
 </body>
