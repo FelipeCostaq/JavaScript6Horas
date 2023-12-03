@@ -5,15 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toggle Color</title>
     <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
         h1{
             text-align: center;
         }
+        div{
+            position: absolute;
+            left: 35%;
+        }
+
+        input{
+            text-transform: uppercase;
+        }
+
     </style>
 </head>
 <body>
     <h1>Mude a cor</h1>
-    <input type="text" name="ident" id="ident">
-    
+    <div>
+        <label for="ident ">Coloque uma cor: </label>
+        <input type="text" name="ident" id="ident" placeholder="BLUE, RED, YELLOW, BLACK, WHITE." size="40">
+        <input type="button" value="Trocar" onclick="clicou()">
+    </div>
+
+
+    <script>
+        function clicou(){
+            var color = document.getElementById('ident').value
+            if(color === ""){
+                alert('[ERROR] Campo vazio ou Cor inválida!')
+            }else{
+                switch(color){
+                    case 'red':
+                        document.body.style.backgroundColor = 'red'
+                    break;
+
+                    case 'yellow':
+                        document.body.style.backgroundColor = 'yellow'
+                    break;
+
+                    case 'blue':
+                        document.body.style.backgroundColor = 'blue'
+                    break
+
+                    case 'black':
+                        document.body.style.backgroundColor = 'black'
+                        document.body.style.color = 'white'
+                    break
+
+                    case 'white':
+                        document.body.style.backgroundColor = 'white'
+                }
+            }
+        }
+    </script>
     
 </body>
 </html>
