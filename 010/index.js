@@ -1,4 +1,6 @@
-for (let i = 1 ; i < 100001; i++){
-    document.getElementById('resultado').innerHTML += `${i},`
+var ano = new Date().getFullYear();
+
+for (let i = ano; i >= 1900; i--){
+    document.getElementById('ano').innerHTML +="<option value='" + i + "'>" +i+ "<option>"
+    
 }
-resultado.innerHTML += ` FIM! 🏁`
