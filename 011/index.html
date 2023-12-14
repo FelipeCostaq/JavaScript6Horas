@@ -6,6 +6,27 @@
     <title>Class</title>
 </head>
 <body>
-    
+    <h1>
+        Classes
+    </h1>
+
+
+
+    <script>
+
+        class Carro{
+            constructor(valor1,valor2,valor3){
+                this.marca = valor1;
+                this.modelo = valor2;
+                this.ano = valor3;
+            }
+            buzina(){
+                return this.modelo+" buzinou: Biiiiiii";
+            }
+        }
+
+        const uno = new Carro('Fiat', 'Uno', 2001);
+        const golquadrado = new Carro('Volkswagen', 'Gol quadrado', 1994)
+    </script>
 </body>
 </html>
