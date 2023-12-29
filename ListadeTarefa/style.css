@@ -65,22 +65,30 @@ main{
 
 .item-icone{
     flex: 20%;
-    border: 1px solid orange;
     text-align: center; 
     font-size: 2rem;
 }
 
 .item-nome{
     flex: 55%;
-    border: 1px solid orange;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
 }
 
 .item-botao{
     flex: 25%;
-    border: 1px solid orange;
+    background-color: red;
 }
 
 svg{
+    margin-top: 20px;
     width: 30px;
+}
 
+.delete{
+    background-color: red;
+    text-align: center;
+    margin-left: 100px;
+    padding: 10px;
 }
