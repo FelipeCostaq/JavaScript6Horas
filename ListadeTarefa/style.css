@@ -6,6 +6,7 @@
 }
 
 h1{
+    margin-top: 25px;
     font-size: 3rem;
     text-align: center;
 }
@@ -14,10 +15,72 @@ section{
     display: flex;
     flex-flow: row wrap;
     width: 90%;
-    border: 1px solid red;
+    border: 1px solid black;
     margin: auto auto;
+    margin-top: 50px;
+
 }
 
 input{
     height: 120px;
+    font-size: 2rem;
+    width: 80%;
+    padding-left: 10%;
+}
+
+button{
+    width: 20%;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+button:hover{
+    background-color: rgba(0, 0, 0, 0.723);
+    color: rgba(255, 255, 255);
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto;
+    border: 1px solid transparent;
+    padding-top: 40px;
+}
+
+.item{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background: white;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.468);
+}
+
+.item-icone{
+    flex: 20%;
+    border: 1px solid orange;
+    text-align: center; 
+    font-size: 2rem;
+}
+
+.item-nome{
+    flex: 55%;
+    border: 1px solid orange;
+}
+
+.item-botao{
+    flex: 25%;
+    border: 1px solid orange;
+}
+
+svg{
+    width: 30px;
+
 }
